@@ -14,7 +14,7 @@ public class Controller {
 	private UserService userServ;
 	
 	@PostMapping("/add")
-	public void add( Users user)
+	public void add( @RequestBody Users user)
 	{
 		System.out.println("ctrl");
 		userServ.add(user);
